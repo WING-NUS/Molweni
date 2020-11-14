@@ -30,8 +30,8 @@ In particular, most of the questions in our dataset are questions leading by Why
 ## Dataset
 
 Our dataset derives from the large scale multiparty dialogues dataset the Ubuntu Chat Corpus (Lowe et al., 2015). The Ubuntu dataset is a large scale multiparty dialogues corpus. We adopt the dialogues with 8-15 utterances and 2-9 speakers. To simplify the task, we ﬁlter the dialogues with long sentences (more than 20 words).
-We choose 10,000 dialogues with 88,303 utterances from the Ubuntu dataset , including 78,246 discourse relations and 32,700 questions for machine reading comprehension. 
-The average speakers per dialogue in our dataset is 3.52 , the average and max length of dialogues are respectively 8.83 and 14 utterances. The number of answerable questions and unanswerable questions are 27,269 and 5,115. 
+We choose 10,000 dialogues with 88,303 utterances from the Ubuntu dataset , including 78,245 discourse relations and 30,046 questions for machine reading comprehension. 
+The average speakers per dialogue in our dataset is 3.52 , the average and max length of dialogues are respectively 8.83 and 14 utterances. The number of answerable questions and unanswerable questions are 25,759 and 4,287. 
 
 | Metric | Number |
 |:-------:|-----------|
@@ -39,7 +39,7 @@ The average speakers per dialogue in our dataset is 3.52 , the average and max l
 | Avg./Max. question length (in tokens) | 5.91 / 19 |
 | Avg./Max. answer length (in tokens) | 4.08 / 19 |
 | Avg./Max. dialogue length (in tokens)  | 104.4 / 208 |
-| Avg./Max. dialogue length (in utterances) | *** / 14 |
+| Avg./Max. dialogue length (in utterances) | 8.82 / 14 |
 | Avg./Max. utterance length (in tokens) | 10.8 / 19 |
 | Vocabulary size | 24,615 |
 | Answerable questions | 25,779 |
@@ -54,7 +54,7 @@ The overview of Molweni for MRC(withDiscourse):
 | :-----: | --------: | --------: | ------: |
 |   TRAIN   |     8,771 | 77,374 |  24,682 |
 |   DEV   |       883 |     7,823 |   2,513 |
-|   TEST   |       100 |     845 |     2,817 |
+|   TEST   |       100 |     845 |     2,871 |
 
 
 The overview of Molweni for Discourse parsing:
@@ -134,3 +134,7 @@ The "relations" field is a list of relations between two utterances,and classify
 ## Contact
 
 * [Ming Liu](http://homepage.hit.edu.cn/liuming1981).
+
+## Acknowledgments
+
+Thanks to Prof. [Min-Yen Kan](https://www.comp.nus.edu.sg/~kanmy/index.html) and Dr. Wenqiang Lei of National University of Singapore. Thanks to Zihao Zheng, Zekun Wang, Yibo Sun, Tiantian Jiang, Daxing Zhang, Rongtian Bian, Heng Zhang, Hu Zhenyu and other students of Harbin Institute of Technology for their support in the process of data set annotation. Thanks to Wenpeng Hu, a Ph.D. student of Peking University, for providing preprocessed Ubuntu data.
